@@ -28,4 +28,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { lotto: arr });
 });
 
+router.get('/hello', (req, res, next) => {
+  res.render('hello');
+});
+
 module.exports = router;
